@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merna Painting Website</title>
+    <link href="./main.css" rel="stylesheet" />
+    <link href="./assets/font/Poppins-Regular.ttf" rel="stylesheet" />
+    <link href="./assets/font/Poppins-Italic.ttf" rel="stylesheet" />
+    <link href="./assets/font/Poppins-Medium.ttf" rel="stylesheet" />
+    <link href="./assets/font/Poppins-MediumItalic.ttf" rel="stylesheet" />
+    <link href="./assets/font/Poppins-Bold.ttf" rel="stylesheet" />
+    <link href="./assets/font/Poppins-BoldItalic.ttf" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav-logo">Canvas Prints and Paintings</h1>
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a class="link">Instagram</a>
+        </li>
+        <li class="nav-link">
+          <a class="link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main" id="main">
+      <template id="template">
+        <article class="article">
+          <div data-image class="article-image-placeholder"></div>
+          <h2 data-title class="article-title"></h2>
+          <span class="article-price-container">
+            <p>was</p>
+            <del data-was-price></del>
+            <p data-now-price></p>
+          </span>
+        </article>
+      </template>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
