@@ -12,6 +12,8 @@
     <link href="./assets/font/Poppins-MediumItalic.ttf" rel="stylesheet" />
     <link href="./assets/font/Poppins-Bold.ttf" rel="stylesheet" />
     <link href="./assets/font/Poppins-BoldItalic.ttf" rel="stylesheet" />
+
+    <script src="./slideover.js" defer></script>
   </head>
   <body>
     <nav class="nav">
@@ -25,9 +27,13 @@
         </li>
       </ul>
     </nav>
-    <main class="main" id="main">
+    <main class="main">
+      <h1 class="heading">Gallery</h1>
+      <section id="gallery" class="grid"></section>
+      <section id="slideover" class="slideover"></section>
+
       <template id="template">
-        <article class="article">
+        <article class="article" onclick="openSlideover()">
           <div data-image class="article-image-placeholder"></div>
           <h2 data-title class="article-title"></h2>
           <span class="article-price-container">
@@ -37,6 +43,8 @@
           </span>
         </article>
       </template>
+
+      <div id="overlay" onclick="closeSlideover()" class="overlay"></div>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
